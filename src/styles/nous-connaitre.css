@@ -1,0 +1,113 @@
+.nous-connaitre {
+    display: grid;
+
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 600;
+    gap: 2rem;
+    padding: 2rem;
+    border: 1px solid red;
+}
+
+.nous-connaitre * {
+    overflow: visible;
+}
+
+.left {
+    width: 100%;
+}
+
+.nous-connaitre form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    width: 80%;
+    border-radius: 0.75rem;
+    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+    background-color: #fff;
+    padding: 2rem;
+}
+
+.right {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nous-connaitre input, 
+.nous-connaitre textarea {
+    border-radius: 0.75rem;
+    outline: none;
+    border: 2px solid #000;
+    background-color: transparent;
+    transition: box-shadow 0.3s, transform 0.3s;
+    width: 70%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+}
+
+.nous-connaitre label {
+    margin-top: 1rem;
+    align-self: flex-start;
+    font-size: 1rem;
+    color: #333;
+}
+
+.nous-connaitre input:focus, 
+.nous-connaitre textarea:focus {
+    box-shadow: 0px 0px 8px rgba(0, 0, 255, 0.2);
+    transform: scale(1.02);
+}
+
+.nous-connaitre button {
+    border: 2px solid #000;
+    border-radius: 0.75rem;
+    width: 70%;
+    margin-top: 2rem;
+    background-color: #000;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.nous-connaitre button:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+.nous-connaitre textarea {
+    padding: 0.5rem 0.75rem;
+    height: 100px; /* Height for textarea */
+}
+
+@media (max-width: 768px) {
+    .nous-connaitre form {
+        width: 80%;
+    }
+
+    .nous-connaitre input, 
+    .nous-connaitre textarea, 
+    .nous-connaitre button {
+        width: 90%;
+    }
+}
+
+@media (width< 460px) {
+    .nous-connaitre form {
+        width: 75%;
+        
+    }
+.nous-connaitre{
+    grid-template-columns: 80%;
+}
+    .nous-connaitre input, 
+    .nous-connaitre textarea, 
+    .nous-connaitre button {
+        width: 100%;
+    }
+}
